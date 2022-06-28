@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-
-"""Print alphabet in lower case except from e and q."""
-for letter in range(97, 123):
-    if letter == 101 or letter == 113:
-        continue
-    print("{}".format(chr(letter)), end="")
+for alpha in range(97, 123):
+    if alpha == 101 or alpha == 113:
+        alpha = alpha + 1
+    else:
+        print("{}".format(chr(alpha)), end='')
